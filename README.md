@@ -1,118 +1,58 @@
-# 🛒 Brazilian E-Commerce — Power BI Analytics Report
+# 🛒 Brazilian E-Commerce Analytics | Power BI
 
-<p align="center">
-  <img 
-    src="./images/dashboard-preview.png" 
-    alt="Brazilian E-Commerce Power BI Dashboard"
-    width="900"
-  >
-</p>
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-00599C?style=for-the-badge&logo=microsoft&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 
-<p align="center">
-  <a href="https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9">
-    <img 
-      src="https://img.shields.io/badge/Power%20BI-Abrir%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"
-      alt="Abrir Dashboard no Power BI"
-    >
-  </a>
-</p>
-
-<p align="center">
-  <strong>Dashboard interativo desenvolvido em Power BI.</strong><br>
-  Clique no botão acima para explorar o relatório completo.
-</p>
+> Análise ponta a ponta das operações de um marketplace de e-commerce brasileiro. O projeto transforma dados transacionais brutos em inteligência de negócios, avaliando performance logística, satisfação do cliente e volume de vendas.
 
 ---
 
-## 📊 Dashboard Interativo
+## 📊 Acesse o Dashboard Interativo
 
-O relatório apresenta uma análise completa das operações de e-commerce brasileiro, explorando indicadores de vendas, logística, satisfação dos clientes, distribuição geográfica e comportamento de pagamento.
+Para interagir com os filtros, navegar pelas páginas e explorar os dados dinamicamente, acesse a versão publicada no Power BI Web:
 
-<p align="center">
+[![Acessar Relatório Power BI](https://img.shields.io/badge/Visualizar_Dashboard_Interativo-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9)
 
-<a href="https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9">
-
-<img 
-  src="./images/dashboard-preview.png"
-  alt="Preview do Dashboard Brazilian E-Commerce"
-  width="100%"
->
-
-</a>
-
-</p>
-
-<p align="center">
-
-### 👆 Clique na imagem para abrir o dashboard interativo
-
-<a href="https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9">
-
-<img src="https://img.shields.io/badge/Power%20BI-Explorar%20Relatório%20Interativo-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-
-</a>
-
-</p>
+*(Link direto: [https://app.powerbi.com/view...](https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9))*
 
 ---
 
-## 📋 Visão Geral
+## 💡 Principais Insights Analíticos
 
-Este projeto apresenta uma análise completa das operações de um marketplace brasileiro de e-commerce utilizando o dataset público da Olist.
+A análise dos dados (2016–2018) revelou oportunidades críticas de otimização operacional e de mercado:
 
-O objetivo do relatório é transformar dados operacionais em informações que auxiliem na análise de:
-
-- 💰 Volume de vendas e receita
-- 📦 Performance logística
-- 🚚 Prazo de entrega
-- ⭐ Satisfação dos clientes
-- 🗺️ Distribuição geográfica
-- 💳 Comportamento de pagamento
-- 🛍️ Performance de produtos e vendedores
-
-**Período dos dados:** 2016 – 2018
-
-**Ferramenta:** Power BI Desktop
-
-**Modo de armazenamento:** Import
-
-**Dataset:** Brazilian E-Commerce Public Dataset by Olist
+*   📍 **Concentração Geográfica Extrema:** O estado de São Paulo responde sozinho por **42% dos pedidos**. O eixo SP-RJ-MG concentra **66,6%** do volume total, revelando um enorme potencial de expansão (e necessidade de reestruturação logística) para as regiões Norte, Nordeste e Centro-Oeste.
+*   🚚 **Gargalos de Entrega vs. Expectativa:** Embora **95%** das entregas cumpram o prazo estimado pelo site, o tempo médio de entrega real é de **12,56 dias**. Em um mercado competitivo onde entregas ocorrem em 3-5 dias, há um risco latente de churn.
+*   ⭐ **Polarização na Satisfação do Cliente:** A nota média é positiva (4,09/5), mas **11,5%** das avaliações são extremas (Nota 1). A discrepância indica que a experiência do usuário costuma ser excelente, exceto quando ocorrem falhas graves (geralmente logísticas).
+*   💳 **Comportamento de Pagamento:** Cartão de crédito domina absoluto (**75,7%**), com ticket médio superior. Contudo, o boleto bancário (19,5%) adiciona um "delay" natural de ~1,4 dias no processamento, impactando a percepção final do prazo de entrega.
+*   📦 **Impacto do Frete:** O frete representa cerca de **16,6%** da receita total. Para produtos de baixo ticket, esse custo proporcional é um provável ofensor de taxas de conversão.
 
 ---
 
-## 🗂️ Dataset de Origem
+## 📈 Resumo de KPIs
 
-Os dados utilizados neste projeto são provenientes do dataset público da Olist, disponibilizado no Kaggle.
-
-O conjunto de dados contém informações sobre:
-
-- Clientes
-- Pedidos
-- Produtos
-- Vendedores
-- Pagamentos
-- Avaliações
-- Geolocalização
-
-O dataset permite acompanhar todo o ciclo de um pedido, desde a compra até a entrega e avaliação do cliente.
-
-<p align="center">
-
-<a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">
-
-<img src="https://img.shields.io/badge/Kaggle-Acessar%20Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white">
-
-</a>
-
-</p>
+| Métrica | Valor | Métrica | Valor |
+|---|---|---|---|
+| 📦 **Total de Pedidos** | 99.441 | 💰 **Receita Produtos** | R$ 1.359.164.370 |
+| 👥 **Clientes Únicos** | 96.096 | 🚚 **Receita de Frete** | R$ 225.190.954 |
+| 🏪 **Total de Vendedores**| 3.095 | 💳 **Ticket Médio** | R$ 13.668,05 |
+| 🛒 **Itens Vendidos** | 134.936 | ⭐ **Nota Média (CSAT)** | 4,09 / 5,00 |
 
 ---
 
-## 🏗️ Arquitetura do Modelo Semântico
+## ⚙️ Arquitetura do Modelo Semântico
 
-O modelo foi estruturado utilizando conceitos de **Star Schema** e **Snowflake Schema**.
+O projeto foi modelado no Power BI utilizando uma abordagem mista de **Snowflake Schema** e **Star Schema**, garantindo a performance da ferramenta no modo *Import* sem sobrecarregar a memória. A modelagem foi centrada na tabela fato `olist_order_items_dataset`.
 
-A tabela central do modelo é:
-
-```text
-olist_order_items_dataset
+```mermaid
+graph TD
+    C[Customers] -->|1:N| O(Orders)
+    O -->|1:N| P[Payments]
+    O -->|1:N| R[Reviews]
+    O -->|1:N| I(Order Items - FACT)
+    S[Sellers] -->|1:N| I
+    PR[Products] -->|1:N| I
+    T[Translation] -->|1:N| PR
+    G[Geolocation] -.-> |Desconectada| C
