@@ -13,7 +13,7 @@
 
 Para navegar pelas páginas, utilizar os filtros e explorar os indicadores dinamicamente, acesse a versão publicada no Power BI Web:
 
-[![Acessar Relatório Power BI](https://img.shields.io/badge/Visualizar_Dashboard_Interativo-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](COLOQUE_AQUI_O_LINK_DO_SEU_POWER_BI)
+[![Acessar Relatório Power BI](https://img.shields.io/badge/Visualizar_Dashboard_Interativo-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)]([COLOQUE_AQUI_O_LINK_DO_SEU_POWER_BI](https://app.powerbi.com/view?r=eyJrIjoiZDNiNmIzNTMtMjYwMi00NGI5LThmYTktZjJhMDVmMWRjZGM5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9))
 
 ---
 
