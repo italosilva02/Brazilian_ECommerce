@@ -5,7 +5,7 @@ Análise de dados desenvolvida no Power BI com integração em Python (Matplotli
 ### 📊 Acesse o Dashboard Interativo
 
 Para navegar pelas páginas, interagir com os filtros e explorar os gráficos gerados via script Python dinamicamente, acesse a versão publicada no Power BI Web:
-**https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9**
+**[https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9]**
 
 ---
 
