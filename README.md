@@ -1,117 +1,175 @@
-# 🛒 Brazilian E-Commerce — Análise de Dados com Power BI
+# 🛒 Brazilian E-Commerce | Análise de Vendas & Logística
 
-Dashboard interativo desenvolvido no Power BI para análise do dataset público de e-commerce brasileiro da **Olist**, cobrindo pedidos, produtos, vendedores, pagamentos, avaliações e logística entre 2016 e 2018.
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-00599C?style=for-the-badge&logo=microsoft&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 
-🔗 **[Acesse o Dashboard Online](https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9)**
+> Análise de e-commerce desenvolvida no Power BI sobre o dataset público da **Olist**, cobrindo vendas, logística, pagamentos, avaliações e distribuição geográfica entre 2016 e 2018. O projeto transforma dados brutos de pedidos em indicadores estratégicos que permitem entender o comportamento de compra, a performance de entrega e a satisfação dos clientes no maior marketplace brasileiro.
 
 ---
 
-## 📸 Prévia do Projeto
+## 📊 Acesse o Dashboard Interativo
 
-<br>
+Para navegar pelas páginas, utilizar os filtros e explorar os indicadores dinamicamente, acesse a versão publicada no Power BI Web:
+
+[![Acessar Relatório Power BI](https://img.shields.io/badge/Visualizar_Dashboard_Interativo-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9)
+
+---
+
+## 🖼️ Visão Geral do Projeto
+
+<div align="center">
+
+### Dashboard
 
 | | |
 |:---:|:---:|
-| ![Screenshot 1](images/screenshot_1.png) | ![Screenshot 2](images/screenshot_2.png) |
-| ![Screenshot 3](images/screenshot_3.png) | ![Screenshot 4](images/screenshot_4.png) |
-| ![Screenshot 5](images/screenshot_5.png) | ![Screenshot 6](images/screenshot_6.png) |
+| ![Página 1](images/screenshot_1.png) | 
+| ![Página 2](images/screenshot_2.png) |
+| ![Página 3](images/screenshot_3.png) | 
+| ![Página 4](images/screenshot_4.png) |
 
-<br>
+### Explicação do Projeto
+
+| | |
+|:---:|:---:|
+| ![Explicação 1](images/screenshot_5.png) 
+| ![Explicação 2](images/screenshot_6.png) |
+
+</div>
 
 ---
 
-## 📋 Sobre o Projeto
+## 💡 Principais Insights Analíticos
 
-O dataset da **Olist** é um dos mais completos conjuntos de dados públicos de e-commerce do Brasil. Este projeto transforma esses dados brutos em um painel analítico que permite entender o comportamento de compra, a performance logística, a satisfação dos clientes e a distribuição geográfica das vendas.
+A análise dos **99.441 pedidos** realizados entre 2016 e 2018 revelou padrões importantes sobre vendas, logística e satisfação no e-commerce brasileiro:
 
-**Período analisado:** 2016 – 2018  
-**Fonte dos dados:** [Olist — Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+🟢 **Taxa de entrega de 97%:** Dos 99.441 pedidos analisados, **96.478 foram entregues com sucesso**, demonstrando alta confiabilidade operacional da plataforma. Apenas **625 pedidos foram cancelados** (0,63% do total).
+
+⏱️ **Tempo médio de entrega de 11,2 dias:** A média de dias entre a aprovação do pedido e o recebimento pelo cliente foi de **11,2 dias**, com um desvio médio de **12,6 dias** em relação à data estimada, indicando que as estimativas tendem a ser conservadoras.
+
+💳 **Cartão de crédito domina os pagamentos:** O cartão de crédito representa **74,1% das transações** (76.795 pedidos) e **78,3% do valor total transacionado**, enquanto o boleto bancário aparece em segundo lugar com 19,1% das transações.
+
+🗺️ **São Paulo concentra 42% dos pedidos:** O estado de SP lidera com **41.746 pedidos**, seguido por RJ com 12.852 e MG com 11.635. A região Sudeste domina o volume de compras no período analisado.
+
+🛏️ **Cama, Mesa e Banho é a categoria mais vendida:** Com **11.115 itens vendidos**, lidera o ranking de categorias, seguida por Beleza & Saúde (9.670) e Esporte & Lazer (8.641).
+
+⭐ **Nota média de avaliação de 4,09/5:** Baseado em **99.224 avaliações** de clientes, a plataforma mantém um nível elevado de satisfação, próximo à meta de score 5.
+
+💰 **Receita total de R$ 1,6 bilhão:** O volume financeiro transacionado no período foi de **R$ 1.600.887.212**, com ticket médio de **R$ 16.098 por pedido** e custo total de frete de **R$ 225.190.954**.
+
+📦 **3.095 vendedores ativos:** A plataforma contou com um marketplace diversificado de vendedores distribuídos por todo o Brasil, oferecendo mais de **32.951 produtos** cadastrados.
 
 ---
 
-## 🗂️ Modelo de Dados
+## 📈 Resumo de KPIs
 
-O modelo segue um esquema estrela com **9 tabelas** conectadas via relacionamentos Many-to-One.
+| Métrica | Valor | Métrica | Valor |
+|---|---:|---|---:|
+| 📦 **Total de Pedidos** | 99.441 | ✅ **Pedidos Entregues** | 96.478 |
+| 🛍️ **Total de Clientes** | 99.441 | ❌ **Pedidos Cancelados** | 625 |
+| 🏪 **Total de Vendedores** | 3.095 | ⭐ **Nota Média** | 4,09 / 5 |
+| 📦 **Total de Produtos** | 32.951 | 💰 **Receita Total** | R$ 1,6 bi |
+| ⏱️ **Tempo Médio de Entrega** | 11,2 dias | 🚚 **Custo Total de Frete** | R$ 225 mi |
 
-### Tabelas
+---
 
-| Tabela | Descrição | Colunas |
-|---|---|---|
-| `olist_orders_dataset` | Tabela fato central. Contém todos os pedidos com seus status e datas. | 10 |
-| `olist_customers_dataset` | Dados dos clientes: cidade, estado e CEP. | 6 |
-| `olist_order_items_dataset` | Itens de cada pedido: produto, vendedor, preço e frete. | 13 |
-| `olist_order_payments_dataset` | Pagamentos: tipo, parcelas e valor. | 5 |
-| `olist_order_reviews_dataset` | Avaliações dos clientes: nota e comentários. | 8 |
-| `olist_products_dataset` | Catálogo de produtos: categoria, dimensões e peso. | 9 |
-| `olist_sellers_dataset` | Dados dos vendedores: cidade e estado. | 4 |
-| `olist_geolocation_dataset` | Coordenadas geográficas por CEP para mapas. | 7 |
-| `product_category_name_translation` | Tradução das categorias de produto para inglês. | 2 |
+## ⚙️ Arquitetura do Modelo Semântico
 
-### Diagrama de Relacionamentos
+O projeto utiliza um modelo relacional em **esquema estrela**, com a tabela `olist_orders_dataset` como fato central conectando todas as dimensões. Uma tabela dedicada concentra todas as medidas DAX.
 
+```mermaid
+graph TD
+    A[Olist Brazilian E-Commerce Dataset] --> B[olist_orders_dataset]
+    A --> C[olist_order_items_dataset]
+    A --> D[olist_order_payments_dataset]
+    A --> E[olist_order_reviews_dataset]
+    A --> F[olist_customers_dataset]
+    A --> G[olist_products_dataset]
+    A --> H[olist_sellers_dataset]
+    A --> I[olist_geolocation_dataset]
+    A --> J[product_category_name_translation]
+
+    B --> K[order_id / order_status]
+    B --> L[Datas: compra, aprovação, entrega]
+    B --> M[Colunas Calculadas DAX]
+
+    N[Measure Table] --> O[avg_diff_reciving]
+    N --> P[avf_date_finish]
+    N --> Q[meam_avg]
+    N --> R[target_score]
+    N --> S[Média diff_recive_date YTD]
+    N --> T[Média diff_recive_date MTD]
+    N --> U[Média order_delevery_date_finish MTD]
+    N --> V[Média review_score MTD]
 ```
-olist_customers_dataset
-        │ (1)
-        │ customer_id
-        ▼ (1)
-olist_orders_dataset ──(1)──► olist_order_items_dataset ──(Many)──► olist_products_dataset
-        │                              │                                      │
-        │ (1)                          │ seller_id                            │ product_category_name
-        ▼ (Many)                       ▼ (Many)                               ▼ (Many)
-olist_order_payments_dataset   olist_sellers_dataset          product_category_name_translation
-        
-olist_order_reviews_dataset ──(Many)──► olist_orders_dataset
-olist_geolocation_dataset (suporte a mapas via CEP)
-```
 
 ---
 
-## 📐 Colunas Calculadas
+## 🗂️ Dicionário de Dados
 
-Colunas adicionadas durante o tratamento de dados na tabela `olist_orders_dataset`:
+### olist_orders_dataset — Tabela Fato Central
 
-| Coluna | Descrição |
-|---|---|
-| `diff_recive_date` | Diferença em dias entre a data de aprovação e a data de entrega ao cliente. Mede o tempo real de entrega. |
-| `order_delevery_date_finish` | Diferença em dias entre a data estimada de entrega e a data real de entrega. Positivo = atraso; negativo = adiantado. |
-
-Colunas de calendário adicionadas em `olist_order_items_dataset`:
-
-| Coluna | Descrição |
-|---|---|
-| `Ano` | Ano extraído da data limite de envio. |
-| `Mês` | Número do mês. |
-| `Nome do Mês` | Nome do mês por extenso. |
-| `Semana` | Número da semana no ano. |
-| `Semana do Mês` | Número da semana dentro do mês. |
-
----
-
-## 📊 Medidas DAX
-
-Todas as medidas estão organizadas na tabela `Measure`.
-
-| Medida | Fórmula | Descrição |
+| Coluna | Tipo | Descrição |
 |---|---|---|
-| `avg_diff_reciving` | `AVERAGE(olist_orders_dataset[diff_recive_date])` | Tempo médio geral de entrega (aprovação → recebimento). |
-| `avf_date_finish` | `AVERAGE(olist_orders_dataset[order_delevery_date_finish])` | Desvio médio geral entre data estimada e data real de entrega. |
-| `meam_avg` | `([avf_date_finish] + [avg_diff_reciving]) / 2` | Média combinada dos dois indicadores de prazo. |
-| `target_score` | `5` | Meta de avaliação dos clientes (nota máxima = 5). |
-| `Média de diff_recive_date YTD` | `TOTALYTD(AVERAGE(...), order_approved_at.[Date])` | Tempo médio de entrega acumulado no ano (Year-to-Date). |
-| `Média de diff_recive_date MTD` | `TOTALMTD(AVERAGE(...), order_approved_at.[Date])` | Tempo médio de entrega acumulado no mês (Month-to-Date). |
-| `Média de order_delevery_date_finish MTD` | `TOTALMTD(AVERAGE(...), order_approved_at.[Date])` | Desvio médio de prazo acumulado no mês. |
-| `Média de review_score MTD` | `TOTALMTD(AVERAGE(...), review_answer_timestamp.[Date])` | Nota média de avaliação acumulada no mês. |
+| `order_id` | String | Identificador único do pedido |
+| `customer_id` | String | Chave para a tabela de clientes |
+| `order_status` | String | Status do pedido (delivered, shipped, canceled...) |
+| `order_purchase_timestamp` | DateTime | Data e hora da compra |
+| `order_approved_at` | DateTime | Data de aprovação do pagamento |
+| `order_delivered_carrier_date` | DateTime | Data de entrega à transportadora |
+| `order_delivered_customer_date` | DateTime | Data de entrega ao cliente |
+| `order_estimated_delivery_date` | DateTime | Data estimada de entrega |
+| `diff_recive_date` ⚙️ | Decimal | Dias entre aprovação e entrega ao cliente |
+| `order_delevery_date_finish` ⚙️ | Decimal | Desvio em dias entre estimativa e entrega real |
+
+> ⚙️ *Colunas calculadas adicionadas no Power Query / DAX*
+
+### olist_order_items_dataset — Itens do Pedido
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `order_id` | String | Chave para a tabela de pedidos |
+| `order_item_id` | Int | Sequência do item dentro do pedido |
+| `product_id` | String | Chave para a tabela de produtos |
+| `seller_id` | String | Chave para a tabela de vendedores |
+| `shipping_limit_date` | DateTime | Data limite para envio pelo vendedor |
+| `price` | Decimal | Preço do item |
+| `freight_value` | Decimal | Valor do frete do item |
+| `Ano` ⚙️ | String | Ano extraído da data de envio |
+| `Mês` ⚙️ | String | Número do mês |
+| `Nome do Mês` ⚙️ | String | Nome do mês por extenso |
+| `Semana` ⚙️ | String | Semana do ano |
+
+### Demais Tabelas
+
+| Tabela | Principais Colunas |
+|---|---|
+| `olist_customers_dataset` | `customer_id`, `customer_city`, `customer_state`, `customer_zip_code_prefix` |
+| `olist_order_payments_dataset` | `order_id`, `payment_type`, `payment_installments`, `payment_value` |
+| `olist_order_reviews_dataset` | `order_id`, `review_score`, `review_comment_message`, `review_creation_date` |
+| `olist_products_dataset` | `product_id`, `product_category_name`, `product_weight_g`, dimensões físicas |
+| `olist_sellers_dataset` | `seller_id`, `seller_city`, `seller_state` |
+| `olist_geolocation_dataset` | `geolocation_zip_code_prefix`, `Latitude_Corrigida`, `Corrigido` (lng) |
+| `product_category_name_translation` | `product_category_name`, `product_category_name_english` |
 
 ---
 
-## 🔍 Principais Análises
+## 📐 Medidas DAX
 
-- **Performance logística** — tempo médio de entrega por estado, desvio em relação ao prazo estimado e evolução mensal/anual (YTD e MTD).
-- **Satisfação do cliente** — distribuição das notas de avaliação (1 a 5), meta de score e acompanhamento mensal via `Média de review_score MTD`.
-- **Volume de vendas** — pedidos por período, sazonalidade e status dos pedidos (entregue, cancelado, em trânsito etc.).
-- **Análise de pagamentos** — participação por tipo de pagamento (cartão de crédito, boleto, voucher, débito) e parcelamento médio.
-- **Distribuição geográfica** — mapa de calor de clientes e vendedores por estado e cidade, usando as coordenadas corrigidas do dataset de geolocalização.
-- **Análise de produtos** — categorias mais vendidas, relação entre dimensões físicas do produto e custo de frete, e volume de fotos por produto.
+Todas as medidas estão centralizadas na tabela `Measure`.
+
+| Medida | Expressão DAX | Descrição |
+|---|---|---|
+| `avg_diff_reciving` | `AVERAGE(olist_orders_dataset[diff_recive_date])` | Tempo médio geral de entrega em dias (aprovação → recebimento) |
+| `avf_date_finish` | `AVERAGE(olist_orders_dataset[order_delevery_date_finish])` | Desvio médio entre prazo estimado e entrega real |
+| `meam_avg` | `([avf_date_finish] + [avg_diff_reciving]) / 2` | Média combinada dos dois indicadores de prazo logístico |
+| `target_score` | `5` | Meta de avaliação dos clientes (nota máxima) |
+| `Média de diff_recive_date YTD` | `TOTALYTD(AVERAGE(...), order_approved_at.[Date])` | Tempo médio de entrega acumulado no ano |
+| `Média de diff_recive_date MTD` | `TOTALMTD(AVERAGE(...), order_approved_at.[Date])` | Tempo médio de entrega acumulado no mês |
+| `Média de order_delevery_date_finish MTD` | `TOTALMTD(AVERAGE(...), order_approved_at.[Date])` | Desvio médio de prazo acumulado no mês |
+| `Média de review_score MTD` | `TOTALMTD(AVERAGE(...), review_answer_timestamp.[Date])` | Nota média de avaliação acumulada no mês |
 
 ---
 
@@ -120,67 +178,39 @@ Todas as medidas estão organizadas na tabela `Measure`.
 | Ferramenta | Uso |
 |---|---|
 | **Power BI Desktop** | Modelagem de dados, criação de medidas DAX e desenvolvimento dos visuais |
-| **Power Query (M)** | Tratamento, limpeza e transformação dos dados brutos do CSV |
-| **DAX** | Cálculo de métricas de negócio, inteligência de tempo (YTD, MTD) e KPIs |
-| **Python / Kaggle** | Origem e exploração inicial do dataset |
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-Brazilian-E-Commerce-PowerBI/
-│
-├── Brazilian E-Commerce.pbix   # Arquivo principal do Power BI
-├── README.md                   # Documentação do projeto
-└── images/                     # Screenshots do dashboard
-    ├── screenshot_1.png
-    ├── screenshot_2.png
-    ├── screenshot_3.png
-    ├── screenshot_4.png
-    ├── screenshot_5.png
-    └── screenshot_6.png
-```
-
----
-
-## 🚀 Como Usar
-
-### Visualizar online
-Acesse diretamente pelo link:  
-👉 **[Brazilian E-Commerce Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmZhZDQyYjQtYTNkNC00OTkzLThiZWMtNGI4YmFhMWMyNjA5IiwidCI6IjkwN2IxZDhiLTE2ZTEtNDZiZi05ODczLTI3MjNmNTlmODcwYSJ9)**
-
-### Abrir localmente
-1. Baixe e instale o [Power BI Desktop](https://powerbi.microsoft.com/pt-br/desktop/) (gratuito).
-2. Clone ou baixe este repositório.
-3. Abra o arquivo `Brazilian E-Commerce.pbix`.
-4. O dataset já está embutido no arquivo (modo Import) — não é necessária nenhuma conexão externa.
+| **Power Query (M)** | Tratamento, limpeza e transformação dos dados brutos CSV |
+| **DAX** | Cálculo de métricas, inteligência de tempo (YTD, MTD) e KPIs logísticos |
+| **Kaggle** | Fonte do dataset público da Olist |
 
 ---
 
 ## 📦 Sobre o Dataset
 
-O **Brazilian E-Commerce Public Dataset by Olist** contém informações reais de ~100 mil pedidos realizados em diversas categorias de produtos, anonimizadas e disponibilizadas publicamente no Kaggle.
+O **Brazilian E-Commerce Public Dataset by Olist** contém informações reais de pedidos realizados em diversas categorias de produtos no Brasil, anonimizadas e disponibilizadas publicamente no Kaggle.
 
 | Informação | Detalhe |
 |---|---|
-| Período | Setembro 2016 – Outubro 2018 |
-| Pedidos | ~100.000 |
-| Vendedores | ~3.000 |
-| Produtos | ~32.000 SKUs |
-| Categorias | 73 categorias de produtos |
-| Estados cobertos | 27 estados do Brasil |
+| 📅 Período | Setembro 2016 – Outubro 2018 |
+| 📦 Pedidos | ~100.000 |
+| 👥 Clientes únicos | ~96.000 |
+| 🏪 Vendedores | ~3.000 |
+| 🛍️ Produtos cadastrados | ~33.000 SKUs |
+| 🗂️ Categorias | 73 categorias de produtos |
+| 🗺️ Cobertura | 27 estados do Brasil |
+| 🔗 Fonte | [Kaggle — Olist Brazilian E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) |
 
 ---
 
 ## 👤 Autor
 
-Feito por **Italo Silva**  
-📎 [LinkedIn](https://www.linkedin.com/in/italo-silva) | 💻 [GitHub](https://github.com/italo-silva)
+Feito por **Italo Silva**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-silva)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/italo-silva)
 
 ---
 
 ## 📄 Licença
 
-Dataset original licenciado sob [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) pela Olist.  
+Dataset original licenciado sob [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) pela Olist.
 Este projeto (análise e dashboard) é de uso livre para fins educacionais e de portfólio.
