@@ -177,6 +177,7 @@ Todas as medidas estão centralizadas na tabela `Measure`.
 
 | Ferramenta | Uso |
 |---|---|
+| **Python** | Limpeza de dados, padronização de valores, análise estatística |
 | **Power BI Desktop** | Modelagem de dados, criação de medidas DAX e desenvolvimento dos visuais |
 | **Power Query (M)** | Tratamento, limpeza e transformação dos dados brutos CSV |
 | **DAX** | Cálculo de métricas, inteligência de tempo (YTD, MTD) e KPIs logísticos |
